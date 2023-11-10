@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertActivity">
+    <ImageView
+        android:id="@+id/imageAvatarThem"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        tools:srcCompat="@drawable/ic_launcher_background"/>
+
+    <Button
+        android:id="@+id/buttonChupHinhThem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chụp hình"
+        android:layout_toRightOf="@+id/imageAvatarThem"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/buttonChonHinhThem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonChupHinhThem"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/imageAvatarThem"
+        android:text="Chọn hình"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextNhapTenThem"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageAvatarThem"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextMaNVThem"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNhapTenThem"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="54dp"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:hint="Nhập mã nhân viên"
+        android:inputType="text"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextSDTThem"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextMaNVThem"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="54dp"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:hint="Số điện thoại"
+        android:inputType="text"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonLuuThem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextSDTThem"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="238dp"
+        android:backgroundTint="@color/teal_200"
+        android:hint="Lưu"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/buttonQuyLaiThem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextSDTThem"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="98dp"
+        android:backgroundTint="@color/teal_200"
+        android:hint="Quay lại"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>
